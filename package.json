@@ -1,0 +1,44 @@
+{
+  "name": "hangout-route-planner",
+  "version": "1.2.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check:expo": "expo install --check",
+    "server": "node --experimental-strip-types server/index.ts",
+    "mvp": "node --experimental-strip-types server/index.ts",
+    "build:web": "expo export --platform web --output-dir dist",
+    "build:all": "expo export --platform all --output-dir dist",
+    "dev": "node scripts/dev.mjs",
+    "test:e2e": "playwright test",
+    "smoke:live": "node --experimental-strip-types scripts/smoke-live.mjs",
+    "snapshot:build": "node --experimental-strip-types scripts/build-snapshot.mjs"
+  },
+  "dependencies": {
+    "@maplibre/maplibre-react-native": "^11.5.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/slider": "5.1.2",
+    "expo": "~55.0.23",
+    "maplibre-gl": "^5.24.0",
+    "opening_hours": "^3.15.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.10",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-svg": "15.15.3",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.2.2",
+    "osm-pbf-parser": "^2.3.0",
+    "typescript": "~5.9.2"
+  }
+}

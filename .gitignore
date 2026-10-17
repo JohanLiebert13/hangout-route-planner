@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+android/
+ios/
+.npm-cache/
+test-results/
+playwright-report/
+artifacts/
+var/

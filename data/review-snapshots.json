@@ -1,0 +1,53 @@
+{
+  "researchedOn": "2026-10-17",
+  "note": "Manually researched public-page snapshots; values may be stale. All other ratings are generated mock data, not customer reviews.",
+  "places": [
+    {
+      "id": "node/10301113509",
+      "names": [
+        "Shatre"
+      ],
+      "coordinate": {
+        "latitude": 41.7018571,
+        "longitude": 44.7939098
+      },
+      "rating": 4.4,
+      "reviewCount": 189,
+      "sourceName": "Tripadvisor",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g294195-d11997170-Reviews-Shatre-Tbilisi.html",
+      "summary": "Reviews praise the Georgian food and welcoming atmosphere; some describe slow service."
+    },
+    {
+      "id": "node/12649875412",
+      "names": [
+        "Ruby",
+        "Ruby Cafe"
+      ],
+      "coordinate": {
+        "latitude": 41.6998074,
+        "longitude": 44.7956087
+      },
+      "rating": 4.9,
+      "reviewCount": 16,
+      "sourceName": "Tripadvisor",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g294195-d27969696-Reviews-Ruby_Cafe-Tbilisi.html",
+      "summary": "Reviewers highlight the breakfast, coffee and friendly atmosphere. The review sample is small."
+    },
+    {
+      "id": "node/6404748085",
+      "names": [
+        "Stamba",
+        "Cafe Stamba"
+      ],
+      "coordinate": {
+        "latitude": 41.7053742,
+        "longitude": 44.7883658
+      },
+      "rating": 3.8,
+      "reviewCount": 328,
+      "sourceName": "Tripadvisor",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g294195-d14798057-Reviews-Cafe_Stamba-Tbilisi.html",
+      "summary": "Reviewers enjoy the setting and coffee, while service experiences are mixed."
+    }
+  ]
+}

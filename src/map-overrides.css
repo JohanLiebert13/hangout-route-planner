@@ -1,0 +1,9 @@
+.hangout-map .maplibregl-ctrl-attrib {
+  max-width: 340px;
+  background: rgba(18, 31, 24, 0.94);
+  color: #c5d5b8;
+  font-size: 9px;
+  line-height: 18px;
+}
+.hangout-map .maplibregl-ctrl-attrib a { color: #d7f99a; }
+.hangout-map .maplibregl-ctrl-attrib-inner { white-space: normal; }

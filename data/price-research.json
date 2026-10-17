@@ -1,0 +1,63 @@
+{
+  "researchedOn": "2026-10-17",
+  "purpose": "Category-level calibration for fictional per-person prices. These are not verified venue prices or live quotes.",
+  "currency": "GEL",
+  "budgetLimitsPerPersonPerStop": {
+    "1": 25,
+    "2": 50,
+    "3": 100
+  },
+  "sources": [
+    {
+      "name": "Sakhelosno official bar menu",
+      "url": "https://sakhelosno.ge/bar-menu",
+      "observed": [
+        {
+          "item": "House beer",
+          "amount": 12
+        },
+        {
+          "item": "Gin tonic",
+          "amount": 24
+        },
+        {
+          "item": "Red Flag cocktail",
+          "amount": 28
+        }
+      ]
+    },
+    {
+      "name": "Ruby Cafe public menu listing",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g294195-d27969696-Reviews-Ruby_Cafe-Tbilisi.html",
+      "observed": [
+        {
+          "item": "Oat porridge",
+          "amount": 12
+        },
+        {
+          "item": "Omelette",
+          "amount": 15
+        },
+        {
+          "item": "English breakfast",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "TKT official event listings",
+      "url": "https://tkt.ge/en",
+      "observed": [
+        {
+          "item": "Ibizarecords / Botanico listing, from",
+          "amount": 50
+        },
+        {
+          "item": "Boiler Room Tbilisi listing, from",
+          "amount": 110
+        }
+      ],
+      "note": "Dated listing examples only; not the price or entry eligibility for any recommended nightclub."
+    }
+  ]
+}

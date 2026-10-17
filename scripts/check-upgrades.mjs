@@ -1,0 +1,3 @@
+import {createPlanner} from '../server/planner.ts';import {routeData,response} from '../tests/fixtures/providers.mjs';
+const planner=createPlanner({fetchImpl:async url=>{if(!String(url).includes('/route/'))throw Error('Venue search should be local');return response(routeData);}});
+for(const style of ['chill','bar_hop','club_night']){const before=Date.now();const p=await planner.generateItinerary('Friends',1000,2,{preferences:{friendsStyle:style,startLocal:'2026-10-18T20:00',timeZone:'Asia/Tbilisi',music:'any',atmosphere:'any'}});console.log(JSON.stringify({style,ms:Date.now()-before,stops:p.stops.map(s=>({name:s.name,type:s.tags.amenity||s.tags.leisure,hours:s.visit?.openingStatus})),end:p.endAt}));}

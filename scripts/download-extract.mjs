@@ -1,0 +1,3 @@
+import {createWriteStream} from 'node:fs';import {Readable} from 'node:stream';import {pipeline} from 'node:stream/promises';import {mkdir} from 'node:fs/promises';
+await mkdir('artifacts',{recursive:true});const url='https://download.geofabrik.de/europe/georgia-latest.osm.pbf';
+const r=await fetch(url,{headers:{'User-Agent':'HangoutRoutePlanner/1.1 (private hackathon prototype)'},signal:AbortSignal.timeout(180000)});if(!r.ok)throw Error('Extract HTTP '+r.status);await pipeline(Readable.fromWeb(r.body),createWriteStream('artifacts/georgia-latest.osm.pbf'));console.log('Georgia OSM extract downloaded.');

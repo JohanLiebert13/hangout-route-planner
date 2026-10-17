@@ -1,0 +1,5 @@
+import React from 'react';
+import {View,TextInput,Text,StyleSheet} from 'react-native';
+export default function TimeFields({value,timeZone,onChange,onZoneChange}:{value:string;timeZone:string;onChange:(v:string)=>void;onZoneChange:(v:string)=>void}){const [date,time]=value.split('T');return <View style={{gap:10}}><div style={{display:'flex',gap:10}}><input aria-label="Plan date" type="date" value={date} onChange={e=>onChange(e.target.value+'T'+time)} style={field}/><input aria-label="Plan start time" type="time" value={time} onChange={e=>onChange(date+'T'+e.target.value)} style={field}/></div><Text style={s.label}>VENUE TIME ZONE</Text><TextInput accessibilityLabel="Plan time zone" value={timeZone} onChangeText={onZoneChange} autoCapitalize="none" style={s.input}/></View>;}
+const field:React.CSSProperties={minWidth:0,flex:1,padding:10,border:'1px solid #43533b',borderRadius:9,background:'#17231c',color:'#e6f2dd',colorScheme:'dark',font:'12px system-ui'};
+const s=StyleSheet.create({label:{fontSize:8,color:'#9aaa93',letterSpacing:1},input:{color:'#e6f2dd',borderWidth:1,borderColor:'#43533b',padding:10,borderRadius:9,fontSize:12}});
